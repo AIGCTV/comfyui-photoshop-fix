@@ -1,0 +1,6 @@
+msgpack
+aiofiles
+GitPython
+PyGithub
+asyncio
+numpy

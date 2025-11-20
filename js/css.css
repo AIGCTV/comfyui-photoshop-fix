@@ -1,0 +1,203 @@
+:root {
+  --bluePixel-color-primary: #cdcdcd;
+  --bluePixel-color-secondary: #b4cbe60d;
+  --bluePixel-color-secondary-solid: #242a32;
+  --bluePixel-color-focus: #1f91ff;
+  --bluePixel-track-bg: #000;
+}
+
+.blupixl-slider-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+  outline: 0;
+  margin: 0;
+  height: 26px;
+  cursor: pointer;
+}
+
+.blupixl-slider-input::-webkit-slider-runnable-track {
+  height: 1.5px;
+  border-radius: 0.75px;
+  background: var(--bluePixel-track-bg);
+}
+
+.blupixl-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  background-color: var(--bluePixel-color-secondary-solid);
+  border: 1.75px solid var(--bluePixel-color-primary);
+  transform: rotate(45deg);
+  margin-top: -3.5px;
+  border-radius: 3px;
+}
+
+.blupixl-text-input::-webkit-outer-spin-button,
+.blupixl-text-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.blupixl-text-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.blupixl-button,
+.blupixl-text-input {
+  text-align: left;
+  resize: none;
+  min-width: 20px;
+  height: 24px;
+  padding: 2px 6px;
+  font-size: 10px;
+  border: 0;
+  background: var(--bluePixel-color-secondary);
+  border-radius: 6px;
+  color: var(--bluePixel-color-primary);
+  outline: #2f415500 solid 0px;
+  transition: background 0.3s, outline-color 0.3s;
+}
+
+.blupixl-button {
+  font-size: 8px !important;
+  border: transparent solid 1px;
+}
+.blupixl-text-input::placeholder {
+  color: #b4cbe619;
+}
+
+.blupixl-text-input:focus {
+  outline: #ffffff22 solid 1px;
+  background: #ffffff16;
+}
+
+.blupixl-button:hover {
+  cursor: pointer;
+}
+.blupixl-button:hover,
+.blupixl-text-input:hover {
+  background: #ffffff14;
+}
+
+.blupixl-button-active {
+  background: #0e2d4c;
+  border: var(--bluePixel-color-focus) solid 1px;
+}
+
+.blupixl-button-active:hover {
+  background: #14395f;
+  border: var(--bluePixel-color-focus) solid 1px;
+}
+
+.blupixl-text-input:invalid {
+  border: 1px solid red;
+}
+.blupixl-text-input-ghost {
+  background-color: transparent;
+  color: #5e6165;
+  text-align: right;
+  border: none;
+  font-size: 10px;
+  outline: none;
+  height: 26px;
+  -moz-appearance: textfield;
+}
+.blupixl-text-input-ghost:hover {
+  color: #75787d;
+}
+
+.blupixl-text-input-ghost::-webkit-outer-spin-button,
+.blupixl-text-input-ghost::-webkit-inner-spin-button {
+  display: none;
+}
+.blupixl-align-center {
+  text-align: center;
+  padding: 2px;
+}
+
+/* # title manager dont remove this */
+
+.BluePixeldiv .textarea:focus {
+  outline: none;
+  background: #1a1e24;
+  border: 1px solid #1f91ff;
+}
+.BluePixeldiv .textarea {
+  width: calc(100% - 8px);
+  margin-top: 4px;
+}
+.BluePixelLogo {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+.BluePixeldiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+.BluePixelH1 {
+  color: #fff;
+  font-family: Arial-Regular, sans-serif;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.BluePixelP {
+  text-align: center;
+  color: #f5f5f55e;
+  font-family: Arial-Regular, sans-serif;
+  font-size: 8px;
+}
+.dropdown-menu {
+  margin-top: 4px;
+  border-radius: 16px 16px 0 0;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 -30px 100px 0 rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-items {
+  width: 100%;
+  padding: 4px;
+  background: #1a1e24;
+  border: 1px solid #232b36;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+.dropdown-item {
+  pointer-events: auto;
+  background: #242a32;
+  border: 1px solid #242a32;
+  border-radius: 6px;
+  padding: 6px;
+  color: #606975;
+  font-family: Arial-Regular, sans-serif;
+  font-size: 8px;
+  cursor: pointer;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.dropdown-item.suggested {
+  color: #59a0e3;
+}
+.dropdown-item:hover {
+  background: #0e2d4c;
+  color: white;
+  border: 1px solid #1f91ff;
+}
+.preview-item {
+  background: #0e2d4c;
+  color: white;
+  border: 1px solid #1f91ff;
+}
